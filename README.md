@@ -219,20 +219,6 @@ This Kanban board allows users to manage tasks by moving them between three colu
 - **Sortable Context**: Enables smooth reordering within columns
 - **Drag Overlay**: Visual feedback during drag operations
 
-## Trade-offs and Assumptions
-
-### Trade-offs
-
-1. **No Authentication**: For simplicity, authentication is not implemented. In production, you would need to add user authentication and authorization.
-
-2. **No Real-time Updates**: Tasks don't update in real-time across multiple clients. This could be added using Supabase Realtime.
-
-3. **Simple Validation**: Validation is basic and client-side only. In production, you'd want server-side validation as well.
-
-4. **No Search/Filter**: Search and filter features are not implemented to keep the codebase simple.
-
-5. **No Priority Levels**: Priority badges (Low, Medium, High) are not included to maintain simplicity.
-
 ### Assumptions
 
 1. **Single User**: The application assumes a single user scenario without team collaboration.
@@ -281,36 +267,3 @@ This Kanban board allows users to manage tasks by moving them between three colu
 - `npm run build` - Build for production
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
-
-### Code Style
-
-- TypeScript strict mode enabled
-- ESLint for code quality
-- Tailwind CSS for styling
-- Component-based architecture
-- Clear naming conventions
-
-## Future Enhancements (Not Implemented)
-
-The following features were considered but not implemented to keep the project simple:
-
-- User authentication and authorization
-- Real-time collaboration
-- Task search and filtering
-- Priority levels with badges
-- Due dates and reminders
-- Comments on tasks
-- File attachments
-- Task labels/tags
-- Activity history
-- Export/import tasks
-- Multiple boards
-- Team management
-
-## License
-
-This project is created for educational purposes as an internship assignment.
-
-## Support
-
-For issues or questions, please refer to the project documentation or contact the development team.
